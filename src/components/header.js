@@ -26,7 +26,9 @@ const Header = ({ siteTitle }) => (
             textDecoration: `none`,
           }}
         >
-          {siteTitle}
+          <img style={{
+            width: `100px`,
+          }} src={gatsbyLogo} alt="Gatsby Logo"/>
         </Link>
       </h1>
     </div>
