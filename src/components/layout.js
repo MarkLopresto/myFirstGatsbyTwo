@@ -39,12 +39,8 @@ const Layout = ({ children }) => (
         <MainLayout>
           <section>{children}</section>
           <Archive />
-          <footer>
-            © {new Date().getFullYear()}, Built with
-            {` `}
-            <a href="https://www.gatsbyjs.org">Gatsby</a>
-          </footer>
         </MainLayout>
+        <Footer />
       </>
     )}
   />
