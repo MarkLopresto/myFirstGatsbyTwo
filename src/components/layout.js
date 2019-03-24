@@ -7,11 +7,19 @@
 
 import React from "react"
 import PropTypes from "prop-types"
+import styled from "styled-components"
 import { StaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
 import Archive from "./archive"
-import "./layout.css"
+import "../styles/layout.css"
+import "../styles/global.css"
+
+const MainLayout = styled.main`
+  padding: 3rem 1rem;
+  margin: 0 auto;
+  max-width: 1080px;
+`;
 
 const Layout = ({ children }) => (
   <StaticQuery
